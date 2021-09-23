@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+.time-box{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 30px;
+}
+
+.greet{
+    font-family: 'Gemunu Libre', sans-serif;
+}
