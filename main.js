@@ -21,15 +21,26 @@ function timedis(){
     function backgroundimg(){
         if(hrs<12){
             document.body.style.backgroundImage = "url(./img/morning.jpg)";
+            document.body.style.backgroundPosition='center';
+            document.body.style.backgroundSize='cover';
+            timeDiv[0].style.color = 'white';
             greetDiv.innerHTML='Good Morning';
         }else if(hrs<17){
             document.body.style.backgroundImage = "url(./img/afternoon.jpg)";
+            document.body.style.backgroundPosition='center';
+            document.body.style.backgroundSize='cover';
             greetDiv.innerHTML='Good Afternoon';
         }else if(hrs<21){
             document.body.style.backgroundImage = "url(./img/evening.jpg)";
+            document.body.style.backgroundPosition='center';
+            document.body.style.backgroundSize='cover';
+            timeDiv[0].style.color = 'white';
+            greetDiv.style.color = 'white';
             greetDiv.innerHTML='Good Evening';
         }else{
             document.body.style.backgroundImage = "url(./img/night.jpg)";
+            document.body.style.backgroundPosition='center';
+            document.body.style.backgroundSize='cover';
             greetDiv.innerHTML='Time to bed <br> Good Night';
         }
     }
