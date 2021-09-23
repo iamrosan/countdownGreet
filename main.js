@@ -7,7 +7,7 @@ function timedis(){
     hrs=timeClock.getHours(),
     mins=timeClock.getMinutes(),
     sec=timeClock.getSeconds();
-    timeDiv[0].innerText= hrs+':'+zeroParse(mins)+':'+zeroParse(sec)+'  '+ amPm();
+    timeDiv[0].innerText= format(hrs)+':'+zeroParse(mins)+':'+zeroParse(sec)+'  '+ amPm();
     
     function zeroParse(n){
         return (parseInt(n,10)<10 ? "0" : '') +n;
@@ -18,6 +18,10 @@ function timedis(){
         return (hrs<12 && hrs>=0 ? 'am' : 'pm');
     }
 
+    //12 hr format 
+    function format(h){
+        return(h%12==0?12:h%12);
+    }
     function backgroundimg(){
         if(hrs<12){
             document.body.style.backgroundImage = "url(./img/morning.jpg)";
