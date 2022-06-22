@@ -21,3 +21,13 @@
     font-family: 'Gemunu Libre', sans-serif;
     font-size: 62px;
 }
+
+
+@media only screen and (max-width:375px){
+    .time-box{
+        font-size: 75px;
+    }
+    .greet{
+        font-size: 45px;
+    }
+}
